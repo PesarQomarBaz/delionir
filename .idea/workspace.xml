@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="" />
+    <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +63,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Abasic_backup/PersianAdminLTE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YxXfYTH5L52uR9rgsa1sGf4fIz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,7 +117,7 @@
       <workItem from="1584304164530" duration="3145000" />
       <workItem from="1584308066626" duration="7164000" />
       <workItem from="1584389422573" duration="21664000" />
-      <workItem from="1584594942709" duration="7281000" />
+      <workItem from="1584594942709" duration="7896000" />
     </task>
     <servers />
   </component>
@@ -147,6 +150,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="731" y="283" width="524" height="515" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584060547842" />
+    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2" timestamp="1584621926434">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584621926434" />
     <state x="541" y="311" width="903" height="682" key="EditFileWatcherDialog" timestamp="1584149625256">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
