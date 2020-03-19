@@ -1,0 +1,29 @@
+/*
+Theme Name:     MyThemeName
+Theme URI:      https://mrcode.ir
+Author:         MrCode.ir
+Author URI:     https://mrcode.ir
+Version:        1.0.0
+*/
+
+body{
+    direction: rtl;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header__right {
+        right: 56px; }
+}
+@media only screen and (max-width: 767px) {
+    .header__right {
+        right: 114px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .header__right {
+        right: 0px; }
+ }
+/*======= Navigation Styles =======*/
+.mainmenu ul li {
+    text-align: right;
+}
