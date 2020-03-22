@@ -28,7 +28,7 @@ function sendsmsbp($conn, $number)
     if (mysqli_num_rows($query) > 0) {
         $random_int = random_int(1234, 9876);
         $trial_pass = hash("sha256", $random_int);
-        $update_trial_pass = "UPDATE admin SET trialpass='$trial_pass'";
+        $update_trial_pass = "UPDATE admin SET trialpass='$trial_pass' WHERE phone_number='$number' ";
         $query2 = mysqli_query($conn, $update_trial_pass);
         $send = send("$number", "$random_int");
         $status = '';
@@ -39,7 +39,7 @@ function sendsmsbp($conn, $number)
             $date_send = $items->date;
             $message_id = $items->messageid;
         }
-        $update_date_trial_pass = "UPDATE admin SET datetrialpass='$date_send'";
+        $update_date_trial_pass = "UPDATE admin SET datetrialpass='$date_send' WHERE phone_number='$number'";
         $query3 = mysqli_query($conn, $update_date_trial_pass);
 
         $result = array("status" => $status, 'msg' => 'پیام به سرویس کاوه نگار منتقل شد', 'date' => gmdate('m/d/Y H:i:s', $date_send), 'message_id' => $message_id);
