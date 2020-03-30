@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/addrestaurant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ec34d57-2256-4391-8e8b-11c687a1c842.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ec34d57-2256-4391-8e8b-11c687a1c842/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/app/admin/admin_sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/app/admin/func.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/app/admin/hello.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/app/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/admin/addrestaurant.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/admin/list.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/app/login/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/login/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/examples/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/examples/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/delionir.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/delionir.sql" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +78,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1YxXfYTH5L52uR9rgsa1sGf4fIz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -84,12 +98,19 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/app/home" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/app/home" />
+      <recent name="$PROJECT_DIR$/admin/app/admin" />
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/admin/register" />
+      <recent name="$PROJECT_DIR$/admin/login" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
@@ -97,24 +118,6 @@
       <recent name="$PROJECT_DIR$/admin/app/login/img" />
       <recent name="$PROJECT_DIR$/admin/app/register" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/app/home" />
-      <recent name="$PROJECT_DIR$/admin/register" />
-      <recent name="$PROJECT_DIR$/admin/login" />
-      <recent name="$PROJECT_DIR$/web" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -137,6 +140,18 @@
       <workItem from="1584389422573" duration="21664000" />
       <workItem from="1584594942709" duration="7896000" />
       <workItem from="1584898506224" duration="1244000" />
+      <workItem from="1584929957359" duration="5234000" />
+      <workItem from="1584937684878" duration="614000" />
+      <workItem from="1584941384984" duration="8000" />
+      <workItem from="1585101446101" duration="604000" />
+      <workItem from="1585258434264" duration="4457000" />
+      <workItem from="1585270830112" duration="11000" />
+      <workItem from="1585276062640" duration="1355000" />
+      <workItem from="1585299845919" duration="3050000" />
+      <workItem from="1585361466120" duration="3803000" />
+      <workItem from="1585376378356" duration="5421000" />
+      <workItem from="1585425041869" duration="11850000" />
+      <workItem from="1585512495305" duration="10790000" />
     </task>
     <servers />
   </component>
@@ -148,7 +163,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -184,6 +201,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584621926434" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1585514362642">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.27.1920.987@0.27.1920.987" timestamp="1585514362642" />
     <state x="541" y="311" width="903" height="682" key="EditFileWatcherDialog" timestamp="1584149625256">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -192,22 +213,23 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="781" y="310" width="424" height="497" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584065997254" />
-    <state x="793" y="408" width="399" height="162" key="NewPhpFileDialog" timestamp="1584598036274">
+    <state x="793" y="390" width="399" height="162" key="NewPhpFileDialog" timestamp="1585425117101">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="793" y="408" width="399" height="162" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584598036274" />
-    <state x="487" y="130" width="1016" height="743" key="SettingsEditor" timestamp="1584595837909">
+    <state x="793" y="390" width="399" height="162" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425117101" />
+    <state x="487" y="124" width="1016" height="743" key="SettingsEditor" timestamp="1584930006562">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="487" y="130" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1584595837909" />
+    <state x="487" y="124" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1584930006562" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1583885401523">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="498" height="398" key="SwitcherDM/70.27.1850.1053@70.27.1850.1053" timestamp="1583885401523" />
-    <state x="655" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1584594942231">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="607" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585512495295">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="655" y="336" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584594942231" />
+    <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585512495295" />
+    <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425042217" />
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584309620351">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -216,6 +238,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="303" y="143" width="708" height="867" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584232934158" />
+    <state x="659" y="252" key="run.anything.popup" timestamp="1585263001017">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="659" y="252" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1585263001017" />
     <state x="658" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1584599026478">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         isset($_POST['phone']) && $_POST['phone'] != '' &&
         isset($_POST['work']) && $_POST['work'] === 'loginbp' &&
         isset($_POST['trialpass']) && $_POST['trialpass'] != ''
-    ) {
+    ) { 
         loginbp($conn, $_POST['phone'], $_POST['trialpass']);
     }
 }
@@ -26,7 +26,7 @@ function sendsmsbp($conn, $number)
     $sql = "SELECT * FROM admin where phone_number='$number'";
     $query = mysqli_query($conn, $sql);
     if (mysqli_num_rows($query) > 0) {
-        $random_int = random_int(1234, 9876);
+        $random_int = random_int(12345, 98765);
         $trial_pass = hash("sha256", $random_int);
         $update_trial_pass = "UPDATE admin SET trialpass='$trial_pass' WHERE phone_number='$number' ";
         $query2 = mysqli_query($conn, $update_trial_pass);
@@ -63,6 +63,7 @@ function loginbp($conn, $number, $trial_pass)
         $status = 1;
         $_SESSION['userid'] = $user_id;
         $result = array("status" => $status, 'msg' => 'رمز یک بار مصرف صحیح می باشد', 'userid' => $user_id);
+        setcookie('userid', $user_id, time() + (86400 * 30), "/");
     } else {
         $status = -1;
         $result = array("status" => $status, 'msg' => 'رمز یک بار مصرف صحیح نمی باشد');

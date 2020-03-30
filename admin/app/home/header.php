@@ -1,20 +1,16 @@
-
 <?php
          $home="/delionir/admin/";
-        require_once ("../../../mysql/conn.php");
+        require_once ("../home/func.php");
+        if(isset($_COOKIE['userid']) && $_COOKIE['userid']!=''){
+            cookie_to_session($conn,$_COOKIE['userid']);
+        }
         if(
                 !isset($_SESSION['userid']) || $_SESSION['userid'] == ''
         ){
             header("location:../login/index.php");
             die();
         }
-        
 ?>
-<?php if($_SESSION['userid']==1){
-        $user='admin';
-  }else{
-    $user='restaurant';
-  }?>
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +23,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?=$home?>plugins/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="<?=$home?>https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?=$home?>dist/css/adminlte.min.css">
   <!-- iCheck -->
@@ -50,15 +46,22 @@
   <link rel="stylesheet" href="<?=$home?>dist/css/custom-style.css">
   <link rel="stylesheet" href="<?=$home?>/plugins/datatables/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <!-- map.ir -->
+<!--    <link rel="stylesheet" href="/delionir/dist/css/mapp.min.css">-->
+<!--    <link rel="stylesheet" href="/delionir/dist/css/fa/style.css">-->
+<!--    <style>-->
+<!--        #app {-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--        }-->
+<!--    </style>-->
+    <!-- map.ir -->
 
-<!-- add resturant.php-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.2/css/select.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.dataTables.min.css"/>
-    <!-- add resturant.php-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 
+    <script src="<?=$home?>plugins/jquery/jquery.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -195,12 +198,12 @@
     </a>
 
     <!-- Sidebar -->
-  <?php include_once ("func.php");
-          
-          if($user=='admin'){
-            admin();
+  <?php include_once ("../home/func.php");
+
+          if($_SESSION['userid']==1){
+              include ("../admin/admin_sidebar.php");
           }else{
-            
+              @restaurant();
           }
   ?>
     <!-- /.sidebar -->
