@@ -1,6 +1,7 @@
 <?php
         require_once ("/var/www/html/delionir/control_panel/config.php");
         require_once ("home/func.php");
+        require_once ("admin/func.php");
         if(isset($_COOKIE['userid']) && $_COOKIE['userid']!=''){
             cookie_to_session($conn,$_COOKIE['userid']);
         }
@@ -10,6 +11,7 @@
             header("location:../login/index.php");
             die();
         }
+$admin_info = admin_info($conn, $_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
@@ -209,3 +211,7 @@
   ?>
     <!-- /.sidebar -->
   </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+<?php include_once ("content_header.php");?>

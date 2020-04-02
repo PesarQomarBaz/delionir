@@ -17,24 +17,7 @@
         }
     </style>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1></h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-left">
-                            <li class="breadcrumb-item"><a href="../home/index.php">پنل ادمین</a></li>
-                            <li class="breadcrumb-item active">اضافه کردن رستوران</li>
-                        </ol>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
+
         <!-- Main content -->
         <section class="content">
             <div class="row justify-content-center">
@@ -119,7 +102,7 @@
         </section>
 
         <!-- /.content -->
-    </div>
+
     <!-- Modal -->
     <div class="modal position-absolute fade " id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">

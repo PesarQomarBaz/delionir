@@ -4,10 +4,11 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="https://www.gravatar.com/avatar/52f0fbcbedee04a121cba8dad1174462?s=200&d=mm&r=g" class="img-circle elevation-2" alt="User Image">
+                <img src="<?=$config['url'].'/'.$admin_info['admin_profile_image_path']?>" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="<?=$config['dir']?>#" class="d-block">حسام موسوی</a>
+
+                <a href="<?=$config['dir']?>#" class="d-block"><?=$admin_info['name']." ".$admin_info['family']?></a>
             </div>
         </div>
         <!-- Sidebar Menu -->

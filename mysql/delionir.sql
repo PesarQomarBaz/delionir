@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 02, 2020 at 05:13 AM
+-- Generation Time: Apr 02, 2020 at 02:59 PM
 -- Server version: 8.0.19-0ubuntu0.19.10.3
 -- PHP Version: 7.3.11-0ubuntu0.19.10.3
 
@@ -37,16 +37,17 @@ CREATE TABLE `admin` (
   `pass` varchar(150) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `trialpass` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `datetrialpass` varchar(20) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `admin_or_restaurant` enum('admin','restaurant') CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL
+  `admin_or_restaurant` enum('admin','restaurant') CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL COMMENT 'مشخص کننده این است که ادمین کل می باشد یا ادمین رستوران',
+  `admin_profile_image_path` text CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id`, `phone_number`, `email`, `name`, `family`, `pass`, `trialpass`, `datetrialpass`, `admin_or_restaurant`) VALUES
-(1, '09303927397', 'tahmasebiarman96@gmail.com', 'ارمان', 'طهماسبی زاده', '123456', NULL, NULL, 'admin'),
-(2, '09921837442', 'tahmasebiarman96@gmail.com', 'arman', 'tahmasebi', '934aa7be7deafc0053e92ce49a029603af8bc0b3891322a10b7ab730dfaa5d63', NULL, NULL, 'restaurant');
+INSERT INTO `admin` (`id`, `phone_number`, `email`, `name`, `family`, `pass`, `trialpass`, `datetrialpass`, `admin_or_restaurant`, `admin_profile_image_path`) VALUES
+(1, '09303927397', 'tahmasebiarman96@gmail.com', 'ارمان', 'طهماسبی زاده', '123456', NULL, NULL, 'admin', 'control_panel/dist/img/admin_or_restaurant_prof/arman.jpg'),
+(2, '09921837442', 'tahmasebiarman96@gmail.com', 'arman', 'tahmasebi', '934aa7be7deafc0053e92ce49a029603af8bc0b3891322a10b7ab730dfaa5d63', NULL, NULL, 'restaurant', '');
 
 -- --------------------------------------------------------
 
@@ -79,6 +80,7 @@ CREATE TABLE `restaurant` (
   `restaurant_id` int NOT NULL,
   `restaurant_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_location` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  `restaurant_address` text COLLATE utf8_persian_ci NOT NULL,
   `restaurant_number` int NOT NULL,
   `restaurant_description` text CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_admin` int NOT NULL,
@@ -90,8 +92,8 @@ CREATE TABLE `restaurant` (
 -- Dumping data for table `restaurant`
 --
 
-INSERT INTO `restaurant` (`restaurant_id`, `restaurant_name`, `restaurant_location`, `restaurant_number`, `restaurant_description`, `restaurant_admin`, `restaurant_delivery_fee`, `restaurant_discount_id`) VALUES
-(1, 'رستوران ولی عصر ', ' ', 34473092, 'رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب ', 2, '', '');
+INSERT INTO `restaurant` (`restaurant_id`, `restaurant_name`, `restaurant_location`, `restaurant_address`, `restaurant_number`, `restaurant_description`, `restaurant_admin`, `restaurant_delivery_fee`, `restaurant_discount_id`) VALUES
+(1, 'رستوران ولی عصر ', ' ', '', 34473092, 'رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب ', 2, '', '');
 
 -- --------------------------------------------------------
 
@@ -104,6 +106,18 @@ CREATE TABLE `restaurant_discount` (
   `restaurant_discountـrate` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_discount_code` varchar(128) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_discount_expire_time` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `restaurant_images`
+--
+
+CREATE TABLE `restaurant_images` (
+  `restaurant_images_id` int NOT NULL,
+  `restaurant_id` int NOT NULL,
+  `restaurant_images_id_location_path` text COLLATE utf8_persian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
@@ -137,6 +151,12 @@ ALTER TABLE `restaurant_discount`
   ADD KEY `restaurant_discount_id` (`restaurant_discount_id`);
 
 --
+-- Indexes for table `restaurant_images`
+--
+ALTER TABLE `restaurant_images`
+  ADD PRIMARY KEY (`restaurant_images_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -157,6 +177,12 @@ ALTER TABLE `food`
 --
 ALTER TABLE `restaurant`
   MODIFY `restaurant_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `restaurant_images`
+--
+ALTER TABLE `restaurant_images`
+  MODIFY `restaurant_images_id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
