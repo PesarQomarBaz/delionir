@@ -1,6 +1,6 @@
 <?php
          $home="/delionir/admin/";
-        require_once ("../home/func.php");
+        require_once ("home/func.php");
         if(isset($_COOKIE['userid']) && $_COOKIE['userid']!=''){
             cookie_to_session($conn,$_COOKIE['userid']);
         }
@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="<?=$home?>dist/css/custom-style.css">
   <link rel="stylesheet" href="<?=$home?>/plugins/datatables/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- jQuery -->
     <!-- map.ir -->
 <!--    <link rel="stylesheet" href="/delionir/dist/css/mapp.min.css">-->

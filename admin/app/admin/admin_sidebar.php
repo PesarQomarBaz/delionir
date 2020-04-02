@@ -45,7 +45,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="/delionir/admin/app/admin/index.php" class="nav-link">
+                    <a href="/delionir/admin/app/admin/addrestaurant.php" class="nav-link">
                         <i class="nav-icon fa fa-th"></i>
                         <p>
                             افزودن رستوران

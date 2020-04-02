@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/admin_sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/func.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/hello.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/app/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/admin/addrestaurant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/admin/list.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/home/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/home/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/func.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/home/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/login/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/login/func.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/examples/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/examples/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/delionir.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/delionir.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/admin/admin_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/admin/admin_sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/admin/hello.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/admin/addrestaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/home/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,19 +96,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/app" />
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
+      <recent name="$PROJECT_DIR$/admin/dist/js" />
+      <recent name="$PROJECT_DIR$/admin/app/login/img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/app/home" />
       <recent name="$PROJECT_DIR$/admin/app/admin" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/register" />
       <recent name="$PROJECT_DIR$/admin/login" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist" />
-      <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
-      <recent name="$PROJECT_DIR$/admin/dist/js" />
-      <recent name="$PROJECT_DIR$/admin/app/login/img" />
-      <recent name="$PROJECT_DIR$/admin/app/register" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -152,6 +144,7 @@
       <workItem from="1585376378356" duration="5421000" />
       <workItem from="1585425041869" duration="11850000" />
       <workItem from="1585512495305" duration="10790000" />
+      <workItem from="1585796137373" duration="8279000" />
     </task>
     <servers />
   </component>
@@ -225,10 +218,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="498" height="398" key="SwitcherDM/70.27.1850.1053@70.27.1850.1053" timestamp="1583885401523" />
-    <state x="607" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585512495295">
+    <state x="607" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585796137326">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585512495295" />
+    <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585796137326" />
     <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425042217" />
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584309620351">
       <screen x="70" y="27" width="1850" height="1053" />

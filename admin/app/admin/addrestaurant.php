@@ -1,4 +1,4 @@
-<?php require_once ("../home/header.php");?>
+<?php require_once ("../header.php");?>
 
 
     <style>
@@ -24,7 +24,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>افزودن رستوران</h1>
+                        <h1></h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-left">
@@ -42,7 +42,7 @@
                 <div class="col-md-10 ">
                     <div class="card card-danger">
                         <div class="card-header">
-                            <h3 class="card-title font-weight-bold">قالب آماده ورودی</h3>
+                            <h3 class="card-title font-weight-bold">افزودن رستوران</h3>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
@@ -57,7 +57,7 @@
                                 <!-- /.input group -->
                             </div>
                             <div class="form-group">
-                                <label>شماره تماس رستوران</label>
+                                <label>آدرس رستوران</label>
 
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -67,15 +67,26 @@
                                 </div>
                                 <!-- /.input group -->
                             </div>
-                            <div class="form-group">
-                                <label>توضیحات رستوران</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <div class="form-group d-flex flex-row justify-content-between">
+                                <div class="col-md-2 p-0">
+                                    <label>مبلغ پست </label>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" dir="ltr">
                                     </div>
-                                    <input type="text" class="form-control">
                                 </div>
+                                <div class="col-md-2 p-0">
+                                    <label>شماره تماس رستوران </label>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" dir="ltr" class="form-control">
+                                    </div>
+                                </div>
+
                                 <!-- /.input group -->
                             </div>
                         </div>
@@ -101,8 +112,8 @@
 
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
+            <button type="button" id="open_map" class="btn btn-primary" data-toggle="modal" data-target="#mapModal">
+                مشخص کردن رستوران روی نقشه
             </button>
 
 
@@ -111,7 +122,7 @@
         <!-- /.content -->
     </div>
     <!-- Modal -->
-    <div class="modal position-absolute fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal position-absolute fade " id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">
             <div class="modal-content">
                 <div class="modal-header">
@@ -136,12 +147,11 @@
     </div>
     <script>
         $(".sidebar-mini").addClass("pr-0");
-        $("#exampleModal").attr("z");
+        $("#mapModal").attr("z");
     </script>
 
 
     <!-- /.content-wrapper -->
-
 
 
     <!--    mapbox-gl-geocoder -->
@@ -151,6 +161,8 @@
             href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
             type="text/css"
     />
+
+
     <!--    mapbox-gl-geocoder -->
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiZmFyYW1pciIsImEiOiJjazhicmtoY2MwZjduM21vM3V6dGV2azR2In0.dRpdQa9r7bWeVwtKBPsLUA';
@@ -162,35 +174,47 @@
        var map=new mapboxgl.Map({
            container:'map',
            style:'mapbox://styles/mapbox/streets-v11',
-           center:[-74.5, 40],
-            zoom:12,
-           hash: true,
+           center:[48.673974608911294, 31.31832284646164],
+            zoom:12
        });
+        console.log(map);
         var lngLat;
         var marker;
         var fullScreen=new mapboxgl.FullscreenControl();
         var geocoder = new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
             marker: false,
-            getItemValue:function (e) {
-                if(marker){
-                    marker.remove();
-                }
-                lngLat =e.center;
-                lng=lngLat[0];
-                lat=lngLat[1];
-                marker= new mapboxgl.Marker({
-                    draggable: true
-                })
-                    .setLngLat([lng,lat])
-                    .addTo(map);
-                marker.on('dragend', onDragEnd);
-            },
             mapboxgl: mapboxgl
         });
+
+        //default marker
+        marker= new mapboxgl.Marker({
+            draggable: true
+        })
+            .setLngLat([48.673974608911294,31.31832284646164])
+            .addTo(map);
+        marker.on('dragend', onDragEnd);
+        //default marker
+
+
+        geocoder.on('result', (e) => {
+            if(marker){
+                marker.remove();
+            }
+            lngLat =e.result.center;
+            lng=lngLat[0];
+            lat=lngLat[1];
+            marker= new mapboxgl.Marker({
+                draggable: true
+            })
+                .setLngLat([lng,lat])
+                .addTo(map);
+            marker.on('dragend', onDragEnd);
+        }); // vaghti ke search ba movafaqiyat anjam shod
+
+
         map.addControl(geocoder);
         map.addControl(fullScreen);
-
 
         var coordinates = document.getElementById('coordinates');
 
@@ -202,6 +226,11 @@
             coordinates.innerHTML =
                 'Longitude: ' + latlng.lng + '<br />Latitude: ' + latlng.lat;
         }
+
+
+        window.setInterval(function () {
+            map.resize();
+        },0)
     </script>
 
 <script>
@@ -210,7 +239,11 @@
         var endlat=$("#lat").val();
        var endlngLat= [endlng,endlat];
         if(endlat && endlng){
-            console.log(endlngLat)
+            Swal.fire(
+                'موقعیت رستوران ثبت شد',
+                'مختصات ان برابر با'+ endlngLat + '',
+                'success'
+            )
         }
     })
 </script>
@@ -223,4 +256,4 @@
                 console.error( error );
             } );
     </script>
-<?php require_once("../home/footer.php"); ?>
+<?php require_once("../footer.php"); ?>

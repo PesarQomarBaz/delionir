@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 30, 2020 at 12:12 AM
+-- Generation Time: Apr 02, 2020 at 05:13 AM
 -- Server version: 8.0.19-0ubuntu0.19.10.3
 -- PHP Version: 7.3.11-0ubuntu0.19.10.3
 
@@ -83,14 +83,14 @@ CREATE TABLE `restaurant` (
   `restaurant_description` text CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_admin` int NOT NULL,
   `restaurant_delivery_fee` varchar(50) COLLATE utf8_persian_ci NOT NULL,
-  `restaurant_discount_code` varchar(128) COLLATE utf8_persian_ci NOT NULL
+  `restaurant_discount_id` varchar(128) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `restaurant`
 --
 
-INSERT INTO `restaurant` (`restaurant_id`, `restaurant_name`, `restaurant_location`, `restaurant_number`, `restaurant_description`, `restaurant_admin`, `restaurant_delivery_fee`, `restaurant_discount_code`) VALUES
+INSERT INTO `restaurant` (`restaurant_id`, `restaurant_name`, `restaurant_location`, `restaurant_number`, `restaurant_description`, `restaurant_admin`, `restaurant_delivery_fee`, `restaurant_discount_id`) VALUES
 (1, 'رستوران ولی عصر ', ' ', 34473092, 'رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب رستوران خوب ', 2, '', '');
 
 -- --------------------------------------------------------
@@ -103,7 +103,6 @@ CREATE TABLE `restaurant_discount` (
   `restaurant_discount_id` int NOT NULL,
   `restaurant_discountـrate` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
   `restaurant_discount_code` varchar(128) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `restaurant_id` int NOT NULL,
   `restaurant_discount_expire_time` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
@@ -130,6 +129,12 @@ ALTER TABLE `food`
 ALTER TABLE `restaurant`
   ADD PRIMARY KEY (`restaurant_id`),
   ADD KEY `restaurant_admin` (`restaurant_admin`);
+
+--
+-- Indexes for table `restaurant_discount`
+--
+ALTER TABLE `restaurant_discount`
+  ADD KEY `restaurant_discount_id` (`restaurant_discount_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -162,12 +167,6 @@ ALTER TABLE `restaurant`
 --
 ALTER TABLE `food`
   ADD CONSTRAINT `food_ibfk_1` FOREIGN KEY (`restaurant_id`) REFERENCES `restaurant` (`restaurant_id`);
-
---
--- Constraints for table `restaurant`
---
-ALTER TABLE `restaurant`
-  ADD CONSTRAINT `restaurant_ibfk_1` FOREIGN KEY (`restaurant_admin`) REFERENCES `admin` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
