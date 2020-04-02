@@ -251,7 +251,7 @@ include_once ("func.php");
                 }).done(function (data1) {
                     if (data1.status === 1){
                         // var userid=data.userid;
-                        window.location.href="/delionir/admin/app/home/";
+                        window.location.href="../../app/home/";
                     }else if (data1.status === -1){
                         alert("eshtebah");
                     }

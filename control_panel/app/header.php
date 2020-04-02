@@ -1,5 +1,5 @@
 <?php
-         $home="/delionir/admin/";
+        require_once ("/var/www/html/delionir/control_panel/config.php");
         require_once ("home/func.php");
         if(isset($_COOKIE['userid']) && $_COOKIE['userid']!=''){
             cookie_to_session($conn,$_COOKIE['userid']);
@@ -21,30 +21,30 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?=$home?>plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?=$home?>dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>dist/css/adminlte.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="<?=$home?>plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/iCheck/flat/blue.css">
   <!-- Morris chart -->
-  <link rel="stylesheet" href="<?=$home?>plugins/morris/morris.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/morris/morris.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="<?=$home?>plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <!-- Date Picker -->
-  <link rel="stylesheet" href="<?=$home?>plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/datepicker/datepicker3.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="<?=$home?>plugins/daterangepicker/daterangepicker-bs3.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="<?=$home?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- bootstrap rtl -->
-  <link rel="stylesheet" href="<?=$home?>dist/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>dist/css/bootstrap-rtl.min.css">
   <!-- template rtl version -->
-  <link rel="stylesheet" href="<?=$home?>dist/css/custom-style.css">
-  <link rel="stylesheet" href="<?=$home?>/plugins/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>dist/css/custom-style.css">
+  <link rel="stylesheet" href="<?=$config['dir']?>/plugins/datatables/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- jQuery -->
@@ -62,7 +62,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 
-    <script src="<?=$home?>plugins/jquery/jquery.min.js"></script>
+    <script src="<?=$config['dir']?>plugins/jquery/jquery.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -72,13 +72,13 @@
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="<?=$home?>#"><i class="fa fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="<?=$config['dir']?>#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?=$home?>index3.html" class="nav-link">خانه</a>
+        <a href="<?=$config['dir']?>index3.html" class="nav-link">خانه</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?=$home?>#" class="nav-link">تماس</a>
+        <a href="<?=$config['dir']?>#" class="nav-link">تماس</a>
       </li>
     </ul>
 
@@ -98,15 +98,15 @@
     <ul class="navbar-nav mr-auto">
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="<?=$home?>#">
+        <a class="nav-link" data-toggle="dropdown" href="<?=$config['dir']?>#">
           <i class="fa fa-comments-o"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?=$home?>dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
+              <img src="<?=$config['dir']?>dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   حسام موسوی
@@ -119,10 +119,10 @@
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?=$home?>dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <img src="<?=$config['dir']?>dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   پیمان احمدی
@@ -135,10 +135,10 @@
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?=$home?>dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <img src="<?=$config['dir']?>dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   سارا وکیلی
@@ -151,38 +151,38 @@
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item dropdown-footer">مشاهده همه پیام‌ها</a>
+          <a href="<?=$config['dir']?>#" class="dropdown-item dropdown-footer">مشاهده همه پیام‌ها</a>
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="<?=$home?>#">
+        <a class="nav-link" data-toggle="dropdown" href="<?=$config['dir']?>#">
           <i class="fa fa-bell-o"></i>
           <span class="badge badge-warning navbar-badge">15</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
           <span class="dropdown-item dropdown-header">15 نوتیفیکیشن</span>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <i class="fa fa-envelope ml-2"></i> 4 پیام جدید
             <span class="float-left text-muted text-sm">3 دقیقه</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <i class="fa fa-users ml-2"></i> 8 درخواست دوستی
             <span class="float-left text-muted text-sm">12 ساعت</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item">
+          <a href="<?=$config['dir']?>#" class="dropdown-item">
             <i class="fa fa-file ml-2"></i> 3 گزارش جدید
             <span class="float-left text-muted text-sm">2 روز</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="<?=$home?>#" class="dropdown-item dropdown-footer">مشاهده همه نوتیفیکیشن</a>
+          <a href="<?=$config['dir']?>#" class="dropdown-item dropdown-footer">مشاهده همه نوتیفیکیشن</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="<?=$home?>#"><i
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="<?=$config['dir']?>#"><i
                 class="fa fa-th-large"></i></a>
       </li>
     </ul>
@@ -192,8 +192,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?=$home?>index3.html" class="brand-link">
-      <img src="<?=$home?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+    <a href="<?=$config['dir']?>index3.html" class="brand-link">
+      <img src="<?=$config['dir']?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">پنل مدیریت</span>
     </a>

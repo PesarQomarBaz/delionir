@@ -35,7 +35,6 @@
                 </div>
             </div><!-- /.container-fluid -->
         </section>
-
         <!-- Main content -->
         <section class="content">
             <div class="row justify-content-center">
