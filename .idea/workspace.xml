@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/control_panel/app/content_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8b07fa6-0536-47be-abc0-4b5914589e0e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_panel/dist/js/iranLocalityDatabase/cpc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/admin/add_restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/add_restaurant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_panel/app/admin/admin_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/admin_sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/admin/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/func.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/admin/list_restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/list_restaurant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/app/home/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/app/home/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/dist/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/dist/js/demo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,25 +95,25 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/app/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/control_panel/app" />
+      <recent name="$PROJECT_DIR$/admin/app" />
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
+      <recent name="$PROJECT_DIR$/admin/dist/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/app/admin" />
       <recent name="$PROJECT_DIR$/admin/app/home" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/register" />
       <recent name="$PROJECT_DIR$/admin/login" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/app" />
-      <recent name="$PROJECT_DIR$/dist" />
-      <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
-      <recent name="$PROJECT_DIR$/admin/dist/js" />
-      <recent name="$PROJECT_DIR$/admin/app/login/img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -150,7 +151,13 @@
       <workItem from="1585512495305" duration="10790000" />
       <workItem from="1585796137373" duration="8279000" />
       <workItem from="1585804572012" duration="2276000" />
-      <workItem from="1585831413178" duration="8064000" />
+      <workItem from="1585831413178" duration="8208000" />
+      <workItem from="1585857184258" duration="3649000" />
+      <workItem from="1585898621032" duration="65000" />
+      <workItem from="1585898943204" duration="6230000" />
+      <workItem from="1586077709744" duration="867000" />
+      <workItem from="1586078585510" duration="3000" />
+      <workItem from="1586078594006" duration="20760000" />
     </task>
     <servers />
   </component>
@@ -217,23 +224,27 @@
     </state>
     <state x="750" y="367" width="415" height="156" key="NewPhpFileDialog/0.27.1920.987@0.27.1920.987" timestamp="1585834594089" />
     <state x="793" y="390" width="399" height="162" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425117101" />
-    <state x="487" y="124" width="1016" height="743" key="SettingsEditor" timestamp="1584930006562">
+    <state x="623" y="228" width="1016" height="743" key="SettingsEditor" timestamp="1586077983358">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="487" y="124" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1584930006562" />
+    <state x="623" y="228" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1586077983358" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1583885401523">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="498" height="398" key="SwitcherDM/70.27.1850.1053@70.27.1850.1053" timestamp="1583885401523" />
-    <state x="607" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585831413768">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="655" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1586078593957">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585831413768" />
-    <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425042217" />
+    <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585898943321" />
+    <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586078593957" />
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584309620351">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1584309620351" />
+    <state x="763" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586089685473">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="763" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1053@70.27.1850.1053" timestamp="1586089685473" />
     <state x="303" y="143" width="708" height="867" key="find.popup" timestamp="1584232934158">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

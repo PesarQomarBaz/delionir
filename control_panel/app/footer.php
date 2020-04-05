@@ -1,5 +1,4 @@
 <?php ?>
-</div>
 <!-- end of Content Wrapper. Contains page content -->
 
  <footer class="main-footer">

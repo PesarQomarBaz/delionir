@@ -7,6 +7,4 @@ $config=array(
     'password'=>'1815',
     'database'=>'delionir'
 );
-
-
 ?>

@@ -218,6 +218,6 @@
         traverse(document.body);
     }
 
-  ConvertNumberToPersion()
+  // ConvertNumberToPersion()
 
 })(jQuery)

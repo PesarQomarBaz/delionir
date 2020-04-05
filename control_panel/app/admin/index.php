@@ -1,5 +1,5 @@
 <?php require_once ("../header.php");?>
-
+<div class="content-wrapper">
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -565,7 +565,7 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
+</div>
 
 <script src="<?=$config['dir']?>plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
