@@ -33,10 +33,14 @@
                                 <h3 class="card-title">اطلاعات رستوران</h3>
                             </div>
                             <div class="card-body">
-                                <input class="form-control form-control-lg" type="text" placeholder="اسم رستوران">
-                                <br>
-                                <input class="form-control form-control-lg" type="text" placeholder="آدرس رستوران">
-                                <br>
+                                <div class="form-group">
+                                    <label>نام رستوران</label>
+                                    <input class="form-control form-control-lg" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label>آدرس</label>
+                                    <input class="form-control form-control-lg" type="text">
+                                </div>
                                 <div class="form-group">
                                     <label>استان</label>
                                     <select class="form-control "  id="select_province" style="width: 100%;"></select>
@@ -45,308 +49,26 @@
                                     <label>شهر</label>
                                     <select class="form-control" id="select_city"  style="width: 100%;"></select>
                                 </div>
-
+                                <div class="form-group">
+                                    <label>توضیحات</label>
+                                    <textarea class="form-control" rows="3" placeholder="وارد کردن اطلاعات ..."></textarea>
+                                </div>
+                                <div class="form-group d-flex justify-content-between">
+                                    <!-- Button trigger map modal -->
+                                    <button type="button" id="open_map" class="btn btn-primary" data-toggle="modal" data-target="#mapModal">
+                                        مشخص کردن رستوران روی نقشه
+                                    </button>
+                                    <!-- Button trigger signUpAdminModal modal -->
+                                    <button type="button" id="openSignUpAdminModal" class="btn btn-primary" data-toggle="modal" data-target="#signUpAdminModal">
+                                        وارد کردن اطلاعات مدیر رستوران
+                                    </button>
+                                </div>
 
                             </div>
                             <!-- /.card-body -->
                         </div>
 
                     </div>
-
-                    <!-- left column -->
-                    <div class="col-md-6">
-
-                        <!-- Form Element sizes -->
-                        <div class="card card-success">
-                            <div class="card-header">
-                                <h3 class="card-title">Different Height</h3>
-                            </div>
-                            <div class="card-body">
-                                <input class="form-control form-control-lg" type="text" placeholder=".input-lg">
-                                <br>
-                                <input class="form-control" type="text" placeholder="Default input">
-                                <br>
-                                <input class="form-control form-control-sm" type="text" placeholder=".input-sm">
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-
-                        <div class="card card-danger">
-                            <div class="card-header">
-                                <h3 class="card-title">عرض مختلف</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <input type="text" class="form-control" placeholder=".col-3">
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="text" class="form-control" placeholder=".col-4">
-                                    </div>
-                                    <div class="col-5">
-                                        <input type="text" class="form-control" placeholder=".col-5">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-
-                        <!-- Input addon -->
-                        <div class="card card-info">
-                            <div class="card-header">
-                                <h3 class="card-title">ورودی‌‌ها</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">@</span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="نام کاربری">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-
-                                <h5 class="my-3">به همراه‌ آیکون</h5>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                                    </div>
-                                    <input type="email" class="form-control" placeholder="ایمیل">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa fa-check"></i></span>
-                                    </div>
-                                </div>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-dollar"></i>
-                    </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                    <div class="input-group-append">
-                                        <div class="input-group-text"><i class="fa fa-ambulance"></i></div>
-                                    </div>
-                                </div>
-
-                                <h5 class="my-4 mb-2">به همراه چک باکس و رادیو</h5>
-
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <input type="checkbox">
-                        </span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <!-- /input-group -->
-                                    </div>
-                                    <!-- /.col-lg-6 -->
-                                    <div class="col-lg-6">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><input type="radio"></span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <!-- /input-group -->
-                                    </div>
-                                    <!-- /.col-lg-6 -->
-                                </div>
-                                <!-- /.row -->
-
-                                <h5 class="mt-4 mb-2">به ‌همراه دکمه</h5>
-
-                                <p>بزرگ: <code>.input-group.input-group-lg</code></p>
-
-                                <div class="input-group input-group-lg mb-3">
-                                    <div class="input-group-prepend">
-                                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                                            ارسال
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li class="dropdown-item"><a href="#">لینک 1</a></li>
-                                            <li class="dropdown-item"><a href="#">لینک 2</a></li>
-                                            <li class="dropdown-item"><a href="#">لینک 3</a></li>
-                                            <li class="dropdown-divider"></li>
-                                            <li class="dropdown-item"><a href="#">لینک 4</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- /btn-group -->
-                                    <input type="text" class="form-control">
-                                </div>
-                                <!-- /input-group -->
-
-                                <p>معمولی</p>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <button type="button" class="btn btn-danger">ارسال</button>
-                                    </div>
-                                    <!-- /btn-group -->
-                                    <input type="text" class="form-control">
-                                </div>
-                                <!-- /input-group -->
-
-                                <p>کوچیک <code>.input-group.input-group-sm</code></p>
-                                <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control">
-                                    <span class="input-group-append">
-                    <button type="button" class="btn btn-info btn-flat">برو</button>
-                  </span>
-                                </div>
-                                <!-- /input-group -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-
-                    </div>
-                    <!--/.col (left) -->
-                    <!-- right column -->
-                    <div class="col-md-6">
-                        <!-- Horizontal Form -->
-                        <!-- general form elements disabled -->
-                        <div class="card card-warning">
-                            <div class="card-header">
-                                <h3 class="card-title">اجزای کلی</h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body">
-                                <form role="form">
-                                    <!-- text input -->
-                                    <div class="form-group">
-                                        <label>نوشته</label>
-                                        <input type="text" class="form-control" placeholder="وارد کردن اطلاعات ...">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>نوشته غیرفعال</label>
-                                        <input type="text" class="form-control" placeholder="وارد کردن اطلاعات ..." disabled>
-                                    </div>
-
-                                    <!-- textarea -->
-                                    <div class="form-group">
-                                        <label>متن</label>
-                                        <textarea class="form-control" rows="3" placeholder="وارد کردن اطلاعات ..."></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>متن غیرفعال</label>
-                                        <textarea class="form-control" rows="3" placeholder="وارد کردن اطلاعات ..." disabled></textarea>
-                                    </div>
-
-                                    <!-- input states -->
-                                    <div class="form-group has-success">
-                                        <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> مقدار درست</label>
-                                        <input type="text" class="form-control" id="inputSuccess" placeholder="وارد کردن اطلاعات ...">
-                                    </div>
-                                    <div class="form-group has-warning">
-                                        <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> با اخطار</label>
-                                        <input type="text" class="form-control" id="inputWarning" placeholder="وارد کردن اطلاعات ...">
-                                    </div>
-                                    <div class="form-group has-error">
-                                        <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> با ارور</label>
-                                        <input type="text" class="form-control" id="inputError" placeholder="وارد کردن اطلاعات ...">
-                                    </div>
-
-                                    <!-- checkbox -->
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="option1">
-                                            <label class="form-check-label">چک باکس</label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="option1" disabled>
-                                            <label class="form-check-label">چک باکس غیرفعال</label>
-                                        </div>
-                                    </div>
-
-                                    <!-- radio -->
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" value="option1">
-                                            <label class="form-check-label">رادیو</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" value="option1" disabled>
-                                            <label class="form-check-label">رادیو غیرفعال</label>
-                                        </div>
-                                    </div>
-
-                                    <!-- select -->
-                                    <div class="form-group">
-                                        <label>انتخاب کنید</label>
-                                        <select class="form-control">
-                                            <option>گزینه 1</option>
-                                            <option>گزینه 2</option>
-                                            <option>گزینه 3</option>
-                                            <option>گزینه 4</option>
-                                            <option>گزینه 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>انتخاب کننده غیرفعال</label>
-                                        <select class="form-control" disabled>
-                                            <option>گزینه 1</option>
-                                            <option>گزینه 2</option>
-                                            <option>گزینه 3</option>
-                                            <option>گزینه 4</option>
-                                            <option>گزینه 5</option>
-                                        </select>
-                                    </div>
-
-                                    <!-- Select multiple-->
-                                    <div class="form-group">
-                                        <label>چند انتخابی</label>
-                                        <select multiple class="form-control">
-                                            <option>گزینه 1</option>
-                                            <option>گزینه 2</option>
-                                            <option>گزینه 3</option>
-                                            <option>گزینه 4</option>
-                                            <option>گزینه 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>چند انتخابی غیرفعال</label>
-                                        <select multiple class="form-control" disabled>
-                                            <option>گزینه 1</option>
-                                            <option>گزینه 2</option>
-                                            <option>گزینه 3</option>
-                                            <option>گزینه 4</option>
-                                            <option>گزینه 5</option>
-                                        </select>
-                                    </div>
-
-                                </form>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!--/.col (right) -->
                 </div>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -355,11 +77,8 @@
     </div>
     <!-- /.content-wrapper -->
 
-    <!-- Button trigger modal -->
-    <button type="button" id="open_map" class="btn btn-primary" data-toggle="modal" data-target="#mapModal">
-        مشخص کردن رستوران روی نقشه
-    </button>
-<!-- Modal -->
+
+<!-- map Modal -->
 <div class="modal position-absolute fade " id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">
         <div class="modal-content">
@@ -383,12 +102,99 @@
         </div>
     </div>
 </div>
+
+    <!-- signUp restaurant admin Modal -->
+    <div class="modal position-absolute fade " id="signUpAdminModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">مشخصات مدیر رستوران را وارد کنید</h5>
+                    <button type="button" style="margin: -1rem auto -1rem  -1rem;" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                   <div class="col-md-6">
+                       <div class="form-group">
+                           <label>نام</label>
+                           <input class="form-control" type="text">
+                       </div>
+                       <div class="form-group">
+                           <label>شماره تماس</label>
+                           <input class="form-control" type="text">
+                       </div>
+                       <div class="form-group">
+                           <label>ایمیل</label>
+                           <input class="form-control" type="text">
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="form-group">
+                           <label>شماره تماس</label>
+                           <input class="form-control" type="text">
+                       </div>
+                       <div class="form-group">
+                           <label>رمز عبور</label>
+                           <input class="form-control" type="text">
+                       </div>
+                       <div class="form-group">
+                           <label for="exampleInputFile">ارسال فایل</label>
+                           <div class="input-group">
+                               <div class="custom-file">
+                                   <input type="file" class="custom-file-input" id="exampleInputFile">
+                                   <label class="custom-file-label" for="exampleInputFile">انتخاب فایل</label>
+                               </div>
+                               <div class="input-group-append">
+                                   <span class="input-group-text" id="">Upload</span>
+                               </div>
+                       </div>
+                   </div>
+                   </div>
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn m-1 btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="saveCoordinates" class="btn  m-1 btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <script>
 $(".sidebar-mini").addClass("pr-0");
 $("#mapModal").attr("z");
 </script>
 
 
+<script  type="text/javascript" src="../../dist/js/iranLocalityDatabase/cpc.js"></script>
+<script>
+    $("#select_province").change(function () {
+        var province_id =$(this).find(":selected").attr("data-provinces-id");
+        add_city(parseInt(province_id));
+    });
+    add_provinces();
+
+    function add_provinces() {
+        var iran = countries[0];
+        var provinces_name;
+        var provinces_id;
+        for (i=0; i<provinces.length; i++){
+            provinces_name = provinces[i].name;
+            provinces_id = provinces[i].id;
+            $("#select_province").append("<option data-provinces-id="+provinces_id+">"+ provinces_name +"</option>");
+        }
+    }
+    function add_city(provinces) {
+        var options="";
+        for (j=0; j<cities.length; j++){
+            if(cities[j].province === provinces){
+                options +="<option data-city-id="+ cities[j].id  +">"+ cities[j].name +"</option>";
+                $("#select_city").html(options);
+            }
+        }
+    }
+</script>
 <!-- /.content-wrapper -->
 
 
@@ -403,115 +209,108 @@ $("#mapModal").attr("z");
 
 <!--    mapbox-gl-geocoder -->
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZmFyYW1pciIsImEiOiJjazhicmtoY2MwZjduM21vM3V6dGV2azR2In0.dRpdQa9r7bWeVwtKBPsLUA';
-mapboxgl.setRTLTextPlugin(
-    'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
-    null,
-    true // Lazy load the plugin
-);
-var map=new mapboxgl.Map({
-   container:'map',
-   style:'mapbox://styles/mapbox/streets-v11',
-   center:[48.673974608911294, 31.31832284646164],
-    zoom:12
-});
-console.log(map);
-var lngLat;
-var marker;
-var fullScreen=new mapboxgl.FullscreenControl();
-var geocoder = new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    marker: false,
-    mapboxgl: mapboxgl
-});
-
-//default marker
-marker= new mapboxgl.Marker({
-    draggable: true
-})
-    .setLngLat([48.673974608911294,31.31832284646164])
-    .addTo(map);
-marker.on('dragend', onDragEnd);
-//default marker
+    cityLatitude=0;
+    citylongitude=0;
+    $("#select_city").change(function () {
+        var city_id =$(this).find(":selected").attr("data-city-id");
+        var n=0;
+        while ( n < cities.length){
+            if(city_id == cities[n].id){
+                cityLatitude=cities[n].latitude;
+                citylongitude=cities[n].longitude;
+                map=customMapbox(citylongitude,cityLatitude);
+                console.log(5);
+            }
+            n++;
+        }
 
 
-geocoder.on('result', (e) => {
-    if(marker){
-        marker.remove();
-    }
-    lngLat =e.result.center;
-    lng=lngLat[0];
-    lat=lngLat[1];
-    marker= new mapboxgl.Marker({
-        draggable: true
-    })
-        .setLngLat([lng,lat])
-        .addTo(map);
-    marker.on('dragend', onDragEnd);
-}); // vaghti ke search ba movafaqiyat anjam shod
 
+    });
 
-map.addControl(geocoder);
-map.addControl(fullScreen);
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZmFyYW1pciIsImEiOiJjazhicmtoY2MwZjduM21vM3V6dGV2azR2In0.dRpdQa9r7bWeVwtKBPsLUA';
+    mapboxgl.setRTLTextPlugin(
+        'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
+        null,
+        true // Lazy load the plugin
+    );
 
-var coordinates = document.getElementById('coordinates');
-
-function onDragEnd() {
-    var latlng = marker.getLngLat();
-    coordinates.style.display = 'block';
-    $("#lng").val(latlng.lng);
-    $("#lat").val(latlng.lat);
-    coordinates.innerHTML =
-        'Longitude: ' + latlng.lng + '<br />Latitude: ' + latlng.lat;
-}
-
-
-window.setInterval(function () {
-    map.resize();
-},0)
-</script>
-
-<script>
-$("#saveCoordinates").click(function () {
-var endlng=$("#lng").val();
-var endlat=$("#lat").val();
-var endlngLat= [endlng,endlat];
-if(endlat && endlng){
-    Swal.fire(
-        'موقعیت رستوران ثبت شد',
-        'مختصات ان برابر با'+ endlngLat + '',
-        'success'
-    )
-}
-})
-</script>
-    <script  type="text/javascript" src="../../dist/js/iranLocalityDatabase/cpc.js"></script>
-    <script>
-        $("#select_province").change(function () {
-            var province_id =$(this).find(":selected").attr("data-provinces-id");
-            add_city(parseInt(province_id));
+    function customMapbox(longitude,Latitude) {
+        var map=new mapboxgl.Map({
+            container:'map',
+            style:'mapbox://styles/mapbox/streets-v11',
+            center:[longitude,Latitude],
+            zoom:12
+        });
+        var lngLat;
+        var marker;
+        var fullScreen=new mapboxgl.FullscreenControl();
+        var geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            marker: false,
+            mapboxgl: mapboxgl
         });
 
-        add_provinces();
+//default marker
+        marker= new mapboxgl.Marker({
+            draggable: true
+        })
+            .setLngLat([longitude,Latitude])
+            .addTo(map);
+        marker.on('dragend', onDragEnd);
+//default marker
 
-        function add_provinces() {
-            var iran = countries[0];
-            var provinces_name;
-            var provinces_id;
-            for (i=0; i<provinces.length; i++){
-                provinces_name = provinces[i].name;
-                provinces_id = provinces[i].id;
-                $("#select_province").append("<option data-provinces-id="+provinces_id+">"+ provinces_name +"</option>");
+
+        geocoder.on('result', (e) => {
+            if(marker){
+                marker.remove();
             }
+            lngLat =e.result.center;
+            lng=lngLat[0];
+            lat=lngLat[1];
+            marker= new mapboxgl.Marker({
+                draggable: true
+            })
+                .setLngLat([lng,lat])
+                .addTo(map);
+            marker.on('dragend', onDragEnd);
+        }); // vaghti ke search ba movafaqiyat anjam shod
+
+
+        map.addControl(geocoder);
+        map.addControl(fullScreen);
+
+        var coordinates = document.getElementById('coordinates');
+
+        function onDragEnd() {
+            var latlng = marker.getLngLat();
+            coordinates.style.display = 'block';
+            $("#lng").val(latlng.lng);
+            $("#lat").val(latlng.lat);
+            coordinates.innerHTML =
+                'Longitude: ' + latlng.lng + '<br />Latitude: ' + latlng.lat;
         }
-        function add_city(provinces) {
-            var options;
-            for (j=0; j<cities.length; j++){
-                if(cities[j].province === provinces){
-                    options +="<option data-city-id="+ cities[j].id  +">"+ cities[j].name +"</option>";
-                    $("#select_city").html(options);
-                }
+
+
+        window.setInterval(function () {
+            map.resize();
+        },0);
+
+
+        $("#saveCoordinates").click(function () {
+            var endlng=$("#lng").val();
+            var endlat=$("#lat").val();
+            var endlngLat= [endlng,endlat];
+            if(endlat && endlng){
+                Swal.fire(
+                    'موقعیت رستوران ثبت شد',
+                    'مختصات ان برابر با'+ endlngLat + '',
+                    'success'
+                )
             }
-        }
-    </script>
+        });
+            return map;
+    }
+</script>
+
 <?php require_once("../footer.php"); ?>
