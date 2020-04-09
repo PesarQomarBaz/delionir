@@ -1,5 +1,4 @@
 <?php
-echo "sad";
 require_once("../../../mysql/conn.php");
 require_once("../../../sms.php");
 
@@ -27,7 +26,7 @@ function sendsmsbp($conn, $number)
     $sql = "SELECT * FROM admin where phone_number='$number'";
     $query = mysqli_query($conn, $sql);
     if (mysqli_num_rows($query) > 0) {
-        $random_int = random_int(12345, 98765);
+        $random_int = rand(12345, 98765);
         $trial_pass = hash("sha256", $random_int);
         $update_trial_pass = "UPDATE admin SET trialpass='$trial_pass' WHERE phone_number='$number' ";
         $query2 = mysqli_query($conn, $update_trial_pass);

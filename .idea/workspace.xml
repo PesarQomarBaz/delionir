@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_panel/app/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/app/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/func.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control_panel/app/login/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/login/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/app/login/loginbp.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/login/loginbp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/conn.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,26 +91,35 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/plupload" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist/plupload" />
-      <recent name="$PROJECT_DIR$/admin/app/admin" />
-      <recent name="$PROJECT_DIR$/admin/app/home" />
-      <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/admin/register" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/control_panel/app" />
       <recent name="$PROJECT_DIR$/admin/app" />
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/admin/node_modules/google-libphonenumber/dist" />
       <recent name="$PROJECT_DIR$/admin/dist/js" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://45.156.186.26/delionir/" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/plupload" />
+      <recent name="$PROJECT_DIR$/admin/app/admin" />
+      <recent name="$PROJECT_DIR$/admin/app/home" />
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/admin/register" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -153,7 +168,11 @@
       <workItem from="1586221127062" duration="9619000" />
       <workItem from="1586310440917" duration="2681000" />
       <workItem from="1586313177434" duration="4686000" />
-      <workItem from="1586361761978" duration="3616000" />
+      <workItem from="1586361761978" duration="4737000" />
+      <workItem from="1586395192785" duration="39000" />
+      <workItem from="1586396327270" duration="61000" />
+      <workItem from="1586397236367" duration="1323000" />
+      <workItem from="1586400059547" duration="1460000" />
     </task>
     <servers />
   </component>
@@ -191,6 +210,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="593" y="190" width="800" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584595515691" />
+    <state x="713" y="345" width="554" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586400076730">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="713" y="345" width="554" height="423" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1586400076730" />
     <state x="778" y="244" width="424" height="597" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1584149624615">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -199,10 +222,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="731" y="283" width="524" height="515" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584060547842" />
-    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2" timestamp="1584621926434">
+    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2" timestamp="1586394969567">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584621926434" />
+    <state x="560" y="92" width="865" height="934" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1586394969567" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1585514362642">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
@@ -211,40 +234,44 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="541" y="311" width="903" height="682" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584149625256" />
-    <state x="781" y="310" width="424" height="497" key="FileChooserDialogImpl" timestamp="1586312977834">
+    <state x="781" y="310" width="424" height="497" key="FileChooserDialogImpl" timestamp="1586397284484">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="781" y="310" width="424" height="497" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1586312977834" />
-    <state x="750" y="367" width="415" height="156" key="NewPhpFileDialog" timestamp="1585834594089">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="781" y="310" width="424" height="497" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1586397284484" />
+    <state x="793" y="390" width="399" height="164" key="NewPhpFileDialog" timestamp="1586400220530">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="750" y="367" width="415" height="156" key="NewPhpFileDialog/0.27.1920.987@0.27.1920.987" timestamp="1585834594089" />
-    <state x="793" y="390" width="399" height="162" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585425117101" />
-    <state x="713" y="153" width="1016" height="743" key="SettingsEditor" timestamp="1586365937845">
+    <state x="793" y="390" width="399" height="164" key="NewPhpFileDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586400220530" />
+    <state x="609" y="149" width="1016" height="743" key="SettingsEditor" timestamp="1586397321703">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="713" y="153" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1586365937845" />
+    <state x="609" y="149" width="1016" height="743" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1586397321703" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1583885401523">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="498" height="398" key="SwitcherDM/70.27.1850.1053@70.27.1850.1053" timestamp="1583885401523" />
-    <state x="655" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1586361761587">
+    <state x="655" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1586400059403">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="607" y="305" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1585898943321" />
-    <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586361761587" />
+    <state x="655" y="324" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586400059403" />
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584309620351">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="477" y="145" width="1031" height="828" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1584309620351" />
-    <state x="763" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586089685473">
+    <state x="763" y="473" width="467" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586394964047">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="763" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1053@70.27.1850.1053" timestamp="1586089685473" />
+    <state x="763" y="473" width="467" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1053@70.27.1850.1053" timestamp="1586394964047" />
     <state x="303" y="143" width="708" height="867" key="find.popup" timestamp="1584232934158">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="303" y="143" width="708" height="867" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584232934158" />
+    <state x="1019" y="173" width="195" height="702" key="ftp.server.browser" timestamp="1586397277909">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="1019" y="173" width="195" height="702" key="ftp.server.browser/70.27.1850.1053@70.27.1850.1053" timestamp="1586397277909" />
     <state x="611" y="238" key="run.anything.popup" timestamp="1585838346901">
       <screen x="0" y="27" width="1920" height="987" />
     </state>

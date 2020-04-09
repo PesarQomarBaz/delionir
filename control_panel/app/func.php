@@ -1,6 +1,6 @@
 <?php
-require_once("../../../mysql/conn.php");
-require_once("../../../sms.php");
+require_once("/var/www/html/delionir/mysql/conn.php");
+require_once("/var/www/html/delionir/sms.php");
 
 
 function cookie_to_session($conn,$userid){
