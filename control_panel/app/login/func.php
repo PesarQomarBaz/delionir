@@ -1,4 +1,5 @@
 <?php
+echo "sad";
 require_once("../../../mysql/conn.php");
 require_once("../../../sms.php");
 

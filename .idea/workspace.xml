@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2de10fd-a4d8-41a1-ad20-246d745ee31f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/plupload/plupload.full.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_panel/app/admin/add_restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/admin/add_restaurant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_panel/app/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_panel/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dropzone/dropzone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control_panel/app/login/func.php" beforeDir="false" afterPath="$PROJECT_DIR$/control_panel/app/login/func.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/conn.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +153,7 @@
       <workItem from="1586221127062" duration="9619000" />
       <workItem from="1586310440917" duration="2681000" />
       <workItem from="1586313177434" duration="4686000" />
-      <workItem from="1586361761978" duration="931000" />
+      <workItem from="1586361761978" duration="3616000" />
     </task>
     <servers />
   </component>
