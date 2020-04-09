@@ -1,5 +1,6 @@
 <?php
 $config=array(
+    'root_path'=>'/var/www/html/delionir',
     'dir'=>'/delionir/control_panel/',
     'url'=>'http://localhost/delionir/',
     'host'=>'localhost',

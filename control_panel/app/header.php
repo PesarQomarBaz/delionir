@@ -50,24 +50,15 @@ $admin_info = admin_info($conn, $_SESSION['userid']);
   <link rel="stylesheet" href="<?=$config['dir']?>/plugins/datatables/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <!-- jQuery -->
-    <!-- map.ir -->
-<!--    <link rel="stylesheet" href="/delionir/dist/css/mapp.min.css">-->
-<!--    <link rel="stylesheet" href="/delionir/dist/css/fa/style.css">-->
-<!--    <style>-->
-<!--        #app {-->
-<!--            width: 100%;-->
-<!--            height: 100%;-->
-<!--        }-->
-<!--    </style>-->
-    <!-- map.ir -->
+
+    <script type="text/javascript" src="<?=$config['url']?>dist/plupload/plupload.full.min.js"></script>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 
     <script src="<?=$config['dir']?>plugins/jquery/jquery.min.js"></script>
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini ">
 <div class="wrapper">
 
   <!-- Navbar -->

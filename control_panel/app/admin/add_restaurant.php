@@ -26,7 +26,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
 
-                    <div class="col-md-6 ">
+                    <div class="col-lg-6 ">
 
                         <div class="card card-success">
                             <div class="card-header">
@@ -53,17 +53,25 @@
                                     <label>توضیحات</label>
                                     <textarea class="form-control" rows="3" placeholder="وارد کردن اطلاعات ..."></textarea>
                                 </div>
-                                <div class="form-group d-flex justify-content-between">
-                                    <!-- Button trigger map modal -->
-                                    <button type="button" id="open_map" class="btn btn-primary" data-toggle="modal" data-target="#mapModal">
-                                        مشخص کردن رستوران روی نقشه
-                                    </button>
-                                    <!-- Button trigger signUpAdminModal modal -->
-                                    <button type="button" id="openSignUpAdminModal" class="btn btn-primary" data-toggle="modal" data-target="#signUpAdminModal">
-                                        وارد کردن اطلاعات مدیر رستوران
+                                <div class="form-group">
+                                    <div class="row justify-content-between">
+                                        <!-- Button trigger map modal -->
+                                        <button type="button" id="open_map" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#mapModal">
+                                            انتخاب روی نقشه
+                                        </button>
+                                        <!-- Button trigger signUpAdminModal modal -->
+                                        <button type="button" id="openSignUpAdminModal" class="btn btn-danger col-md-5" data-toggle="modal" data-target="#signUpAdminModal">
+                                            مدیر رستوران
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <!-- Button trigger ok -->
+                                    <button type="button" class="btn btn-success btn-block">
+                                        تایید
                                     </button>
                                 </div>
-
                             </div>
                             <!-- /.card-body -->
                         </div>
@@ -103,62 +111,60 @@
     </div>
 </div>
 
-    <!-- signUp restaurant admin Modal -->
-    <div class="modal position-absolute fade " id="signUpAdminModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">مشخصات مدیر رستوران را وارد کنید</h5>
-                    <button type="button" style="margin: -1rem auto -1rem  -1rem;" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body d-flex justify-content-center">
-                   <div class="col-md-6">
-                       <div class="form-group">
-                           <label>نام</label>
-                           <input class="form-control" type="text">
-                       </div>
-                       <div class="form-group">
-                           <label>شماره تماس</label>
-                           <input class="form-control" type="text">
-                       </div>
-                       <div class="form-group">
-                           <label>ایمیل</label>
-                           <input class="form-control" type="text">
-                       </div>
+<!-- signUp restaurant admin Modal -->
+<div class="modal position-absolute fade " id="signUpAdminModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document" style="max-width:1200px ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">مشخصات مدیر رستوران را وارد کنید</h5>
+                <button type="button" style="margin: -1rem auto -1rem  -1rem;" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>نام</label>
+                       <input class="form-control" type="text">
                    </div>
-                   <div class="col-md-6">
-                       <div class="form-group">
-                           <label>شماره تماس</label>
-                           <input class="form-control" type="text">
-                       </div>
-                       <div class="form-group">
-                           <label>رمز عبور</label>
-                           <input class="form-control" type="text">
-                       </div>
-                       <div class="form-group">
-                           <label for="exampleInputFile">ارسال فایل</label>
-                           <div class="input-group">
-                               <div class="custom-file">
-                                   <input type="file" class="custom-file-input" id="exampleInputFile">
-                                   <label class="custom-file-label" for="exampleInputFile">انتخاب فایل</label>
-                               </div>
-                               <div class="input-group-append">
-                                   <span class="input-group-text" id="">Upload</span>
-                               </div>
-                       </div>
+                   <div class="form-group">
+                       <label>شماره تماس</label>
+                       <input class="form-control" type="text">
                    </div>
+                   <div class="form-group">
+                       <label>ایمیل</label>
+                       <input class="form-control" type="text">
                    </div>
-                </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <label>شماره تماس</label>
+                       <input class="form-control" type="text">
+                   </div>
+                   <div class="form-group">
+                       <label>رمز عبور</label>
+                       <input class="form-control" type="text">
+                   </div>
+                   <div class="form-group">
+                       <div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
+                       <br />
+                       <div id="container" class="">
+                           <a id="pickfiles"  class="btn btn-block btn-outline-dark" href="javascript:;">انتخاب تصویر</a>
+                           <a id="uploadfiles" class="btn btn-block btn-outline-dark" href="javascript:;">[Upload files]</a>
+                       </div>
+                       <br />
+                       <pre id="console"></pre>
+                   </div>
+               </div>
+            </div>
 
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn m-1 btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" id="saveCoordinates" class="btn  m-1 btn-primary">Save changes</button>
-                </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn m-1 btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="saveCoordinates" class="btn  m-1 btn-primary">Save changes</button>
             </div>
         </div>
     </div>
+</div>
 
 
 <script>
@@ -223,8 +229,6 @@ $("#mapModal").attr("z");
             }
             n++;
         }
-
-
 
     });
 
@@ -311,6 +315,62 @@ $("#mapModal").attr("z");
         });
             return map;
     }
+</script>
+<script type="text/javascript">
+    // Custom example logic
+
+    var uploader = new plupload.Uploader({
+        runtimes : 'html5,flash,silverlight,html4',
+
+        browse_button : 'pickfiles', // you can pass in id...
+        container: document.getElementById('container'), // ... or DOM Element itself
+
+        url : "/examples/upload",
+
+        filters : {
+            max_file_size : '10mb',
+            mime_types: [
+                {title : "Image files", extensions : "jpg,gif,png"},
+                {title : "Zip files", extensions : "zip"}
+            ]
+        },
+
+        // Flash settings
+        flash_swf_url : '/plupload/js/Moxie.swf',
+
+        // Silverlight settings
+        silverlight_xap_url : '/plupload/js/Moxie.xap',
+
+
+        init: {
+            PostInit: function() {
+                document.getElementById('filelist').innerHTML = '';
+
+                document.getElementById('uploadfiles').onclick = function() {
+                    uploader.start();
+                    return false;
+                };
+            },
+
+            FilesAdded: function(up, files) {
+                plupload.each(files, function(file) {
+                    console.log(file);
+                    document.getElementById('filelist').innerHTML += '<div id="' + file.id + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') <b></b></div>';
+                });
+            },
+
+            UploadProgress: function(up, file) {
+                document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+            },
+
+            Error: function(up, err) {
+                document.getElementById('console').innerHTML += "\nError #" + err.code + ": " + err.message;
+            }
+        }
+    });
+
+    uploader.init();
+
 </script>
 
 <?php require_once("../footer.php"); ?>
